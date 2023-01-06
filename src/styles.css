@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: black;
+  font-weight: bold;
+  display: flex;
+  font-size: 1.6rem;
+}
+.hero .container {
+  width: 100%;
+  max-width: 40rem;
+  margin: auto;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #6600ff;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+}
+.hero .container .randomNum {
+  background: #faf0d7;
+  padding: 2rem;
+  min-width: 100%;
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.2rem;
+}
+.hero .container .randomNum p span {
+  color: red;
+  font-weight: bold;
+}
+.hero .numContainer {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 0;
+  min-width: 100%;
+}
+.hero .container div {
+  width: 100%;
+  max-width: 42%;
+}
+.hero .numContainer div input {
+  padding: 1rem;
+  border: none;
+  outline: none;
+  width: 100%;
+  background: #faf0d7;
+  color: red;
+  font-weight: bold;
+  font-size: 1.6rem;
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.2rem;
+}
+.hero .numContainer p {
+  margin-bottom: 0.7rem;
+}
+.hero .container button {
+  align-items: flex-end;
+  border: none;
+  outline: none;
+  background: #faf0d7;
+  color: black;
+  font-weight: bold;
+  padding: 1.4rem;
+  width: 100%;
+  font-size: 2.2rem;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 0.5rem 2.5rem rgba(0, 0, 0, 0.4);
+  border-radius: 3rem;
+}
+.hero .container button:hover {
+  background-color: black;
+  color: #faf0d7;
+}
